@@ -4,14 +4,14 @@ import queue, time, json
 from vosk import Model, KaldiRecognizer
 import pygame
 
-# ─── 0) Initialize & Stop Any Existing Siren ─────────────────────────────────
+
 pygame.mixer.init()
 try:
     pygame.mixer.music.stop()
 except:
     pass
 
-# ─── 1) Page Config & CSS ─────────────────────────────────────────────────────
+
 st.set_page_config(page_title="🛡️ Women Safety App", layout="centered")
 st.markdown("""
     <style>
